@@ -1,0 +1,67 @@
+.section-hero{
+    height: 100vh;
+    width: 100vw;
+    background-image:url('../public/images/herosection.jpg');
+    background-repeat: no-repeat;
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode: lighten;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out 200ms;
+}
+.carasoul{
+    position: relative;
+    min-width: 60%;
+    max-width: 100%;
+    width: 100%;
+}
+.carasul-para{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.selection{
+    position: absolute;
+    top: 5rem;
+    display: flex;
+    gap: 0.7rem;
+    left: 50%;
+}
+.round{
+    cursor: pointer;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.round.prev{
+    left:0rem;
+}
+.round.next{
+    right:0rem;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.s-active{
+   opacity: 1;
+   transition: all 200ms ease-in-out 200ms;
+}
+.c-active{
+background-color: #fff;
+transition: all 200ms ease-in-out 200ms;
+}
+@media screen and (max-width:991px) {
+    .selection{
+        top:10rem;
+        left:45%
+    }
+}

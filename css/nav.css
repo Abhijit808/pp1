@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: grid;
+    gap: 3rem;
+}
 .navbar{
    display: flex;
    justify-content: space-around;
@@ -33,7 +37,6 @@ li{
 .uid{
     display: flex;
     align-items: center;
-    /* background-color: white; */
 }
 
 .relative {
@@ -78,6 +81,7 @@ display: none;
     text-decoration: none;
     font-size: 0.8rem;
 }
+
 .burger{
     display:none;
     position: absolute;
@@ -93,6 +97,7 @@ display: none;
     background-color: #000;
     margin: 0.7rem;
     transition: all 200ms ease-in-out;
+    border-radius: 1rem;
 }
 .t{
     top:20px;
@@ -170,3 +175,72 @@ display: none;
     margin-right: 2rem;
 }
 }
+/**************************************************************
+footer
+**************************************************************/
+.mainfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    height: 100vh;
+    margin: auto 1rem;
+   
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-img{
+    max-width: 100%;
+    width: 227px;
+}
+.submit{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-anchors{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin:1rem 0 0 0;
+}
+input[type=text]{
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    font-size: 1.3rem;
+    padding: 0.2rem 0;
+    position: relative;
+}
+input[type=submit]{
+    width: 30px;
+ background-image: url("../public/images/6035802baa8fd16a1502742f_Cambrian-Icons_navy\ arrow\ small.svg");
+ background-color: transparent;
+ background-repeat: no-repeat;
+ background-size: auto;
+ outline: none;
+ border: none;
+ font-size: 3rem;
+ color: transparent;
+ position: absolute;
+ cursor: pointer;
+ right: 5%;
+}
+.footer-anchors > a{
+    text-decoration: none;
+} 

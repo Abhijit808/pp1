@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *
 ,::after
 ,::before{
@@ -5,9 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     display: grid;
-    gap: 3rem;
+    /* gap: 3rem; */
+    overflow-x: hidden;
 }
 .navbar{
    display: flex;
@@ -115,29 +118,7 @@ display: none;
 .d-n{
       display: none;
 }
-@media screen and (max-width:991px){
-    .burger{
-        display: block;
-    }
-    .navbar{
-        justify-content: flex-start;
-    }
-    .uid{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.5rem;
-    position: absolute;
-    background-color: #fff;
-    left: 0;
-    right: 0;
-    top: 5rem;
-    bottom: auto;
-    height: 100vh;
-    transition: transform 0.5s ease-in ;
-    transform: translateX(100%);
-    padding: 1rem;
-}
+
 .relative{
     width:100%;
 }
@@ -174,7 +155,7 @@ display: none;
     width: 2%;
     margin-right: 2rem;
 }
-}
+
 /**************************************************************
 footer
 **************************************************************/
@@ -182,9 +163,11 @@ footer
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
-    height: 100vh;
-    margin: auto 1rem;
-   
+    /* height: 100vh; */
+    padding:10rem  4rem 0rem;
+    /* margin: auto 1rem; */
+    transition: all 200ms ease;
+    background-color: yellowgreen;
 }
 .information{
     display: flex;
@@ -198,7 +181,7 @@ footer
 }
 .footer-img{
     max-width: 100%;
-    width: 227px;
+    width: 290px;
 }
 .submit{
     display: flex;
@@ -225,9 +208,17 @@ input[type=text]{
     border-bottom: 2px solid red;
     font-size: 1.3rem;
     padding: 0.2rem 0;
-    position: relative;
+    /* position: relative; */
+    background-color: transparent;
 }
-input[type=submit]{
+.footerpara{
+    font-size: 1.8rem;
+}
+.copy
+{
+    font-size: 1rem;
+}
+.footer-submitbtn{
     width: 30px;
  background-image: url("../public/images/6035802baa8fd16a1502742f_Cambrian-Icons_navy\ arrow\ small.svg");
  background-color: transparent;
@@ -244,3 +235,30 @@ input[type=submit]{
 .footer-anchors > a{
     text-decoration: none;
 } 
+@media screen and (max-width:991px){
+    .burger{
+        display: block;
+    }
+    .navbar{
+        justify-content: flex-start;
+    }
+    .uid{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    bottom: auto;
+    height: 100vh;
+    transition: transform 0.5s ease-in ;
+    transform: translateX(100%);
+    padding: 1rem;
+}
+.mainfooter{
+    flex-direction:column
+}
+}
